@@ -14,11 +14,11 @@
     $badWord = $_GET['badword'];
 
     // Sostituisco 3 delle sue lettere con *** 
-    $fixedBadWord = str_replace('occ', '***', $badWord);
+    $fixedBadWord = str_replace($badWord, '***', $badWord);
     ?>  
     
     <h1><?php echo $text . ' lunghezza: ' . strlen($text); ?></h1>
-    <h1><?php echo $fixedBadWord . ' lunghezza: ' . strlen($fixedBadWord)  ?></h1>
+    <h1><?php echo $fixedBadWord . ' lunghezza: ' . strlen($badWord)  ?></h1>
 
 </body>
 </html>
