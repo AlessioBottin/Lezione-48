@@ -7,18 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    
     <?php 
-    $text = 'Hello World';
+    $text = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo minima vero adipisci? Hic, dolorem eum veritatis, amet placeat fuga repellendus iste enim velit explicabo dignissimos tenetur fugit quod esse corrupti!';
     // Salvo la parola passata dai params 
     $badWord = $_GET['badword'];
 
     // Sostituisco 3 delle sue lettere con *** 
-    $fixedBadWord = str_replace($badWord, '***', $badWord);
+    $consoredText = str_replace($badWord, '***', $text);
     ?>  
     
     <h1><?php echo $text . ' lunghezza: ' . strlen($text); ?></h1>
-    <h1><?php echo $fixedBadWord . ' lunghezza: ' . strlen($badWord)  ?></h1>
+    <h1><?php echo $consoredText . ' lunghezza: ' . strlen($consoredText)  ?></h1>
 
 </body>
 </html>
